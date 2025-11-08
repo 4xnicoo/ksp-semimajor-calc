@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSP Semimajor Axis Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KSP Semimajor Axis Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="bodySelect">Celestial Body:</label>
+                <select id="bodySelect">
+                    <option value="kerbol">Kerbol</option>
+                    <option value="moho">Moho</option>
+                    <option value="eve">Eve</option>
+                    <option value="gilly">Gilly</option>
+                    <option value="kerbin">Kerbin</option>
+                    <option value="mun">The Mun</option>
+                    <option value="minmus">Minmus</option>
+                    <option value="duna">Duna</option>
+                    <option value="ike">Ike</option>
+                    <option value="jool">Jool</option>
+                    <option value="laythe">Laythe</option>
+                    <option value="vall">Vall</option>
+                    <option value="tylo">Tylo</option>
+                    <option value="bop">Bop</option>
+                    <option value="pol">Pol</option>
+                    <option value="dres">Dres</option>
+                    <option value="eeloo">Eeloo</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="altitudeInput">Altitude (m):</label>
+                <input type="text" id="altitudeInput" placeholder="400000" min="0" step="1000">
+            </div>
+            <button id="calculateBtn">Calculate</button>
+            <div class="result">
+                <div class="result-label">Semimajor Axis:</div>
+                <div class="unit-tabs" id="unitTabs" style="display: none;">
+                    <button class="unit-tab active" data-unit="m">m</button>
+                    <button class="unit-tab" data-unit="km">km</button>
+                    <button class="unit-tab" data-unit="Mm">Mm</button>
+                    <button class="unit-tab" data-unit="Gm">Gm</button>
+                </div>
+                <div class="result-row">
+                    <div class="result-value" id="resultValue">-</div>
+                    <button id="copyBtn" class="copy-btn" style="display: none;">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Made with &lt;3 by 4xnico.</span>
+        <a href="https://github.com/4xnicoo/ksp-semimajor-calc" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
