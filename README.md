@@ -1,4 +1,6 @@
 # Semimajor Axis calc for Kerbal Space Program
+[Click here to go to the site](https://4xnicoo.github.io/ksp-semimajor-calc/index.html)
+<br>
 minimalistic and simple. selcet a planet/moon, input your numbers and it'll be ready. 
 <br>
 does calculations using JavaScript. frontend in HTML + vanilla CSS.
